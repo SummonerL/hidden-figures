@@ -11,7 +11,7 @@
         window.addEventListener('scroll', function () {
             var parallax = document.getElementsByClassName('hero')[0];
             var scrolled = window.pageYOffset;
-            var rate = scrolled * 0.5;
+            var rate = scrolled * 0.5 - 100;
 
             parallax.style.backgroundPosition = 'center ' + rate + 'px';
         });

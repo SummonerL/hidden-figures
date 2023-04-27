@@ -56,7 +56,7 @@ main {
     height: 500px;
     background: url('./images/lam.jpg') center/cover no-repeat;
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center top -100px;
     background-size: 130%;
     height: 400px;
     position: relative;
