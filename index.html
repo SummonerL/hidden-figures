@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Unveiling the Hidden Figures</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script>
+        window.addEventListener('scroll', function () {
+            var parallax = document.getElementsByClassName('hero')[0];
+            var scrolled = window.pageYOffset;
+            var rate = scrolled * 0.5;
+
+            parallax.style.backgroundPosition = 'center ' + rate + 'px';
+        });
+    </script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <h1 class="site-title">Unveiling the Hidden Figures</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" class="cool-link">Artworks</a></li>
+                    <li><a href="#" class="cool-link">Biography</a></li>
+                    <li><a href="#" class="cool-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <header class="hero">
+            <div class="hero-overlay">
+                <h1 class="hero-title">Wilfredo Lam</h1>
+            </div>
+        </header>
+
+        <section id="hero">
+            <h2>Unveiling the Hidden Figures</h2>
+            <p>Explore a collection of vibrant and dynamic artworks by the renowned Cuban artist.</p>
+            <a href="#" class="cool-link">View Artworks</a>
+        </section>
+
+        <div class="container">
+            <section class="featured-art">
+                <h2 class="featured-art-title">Featured Artworks</h2>
+                <ul class="artwork-list">
+                    <li class="artwork-item">
+                        <img src="./images/mother_and_child.jpg"
+                            alt="Mother and Child">
+                        <h3 class="artwork-item-title">Mother and Child</h3>
+                    </li>
+                    <li class="artwork-item">
+                        <img src="./images/untitled.png"
+                            alt="Untitled">
+                        <h3 class="artwork-item-title">Untitled</h3>
+                    </li>
+                    <li class="artwork-item">
+                        <img src="./images/pole-woods.jpg"
+                            alt="Artwork">
+                        <h3 class="artwork-item-title">Artwork</h3>
+                    </li>
+                    <li class="artwork-item">
+                        <img src="./images/the_jungle.jpg"
+                            alt="The Jungle">
+                        <h3 class="artwork-item-title">The Jungle</h3>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="artist-summary">
+                <h2 class="artist-summary-title">Wilfredo Lam</h2>
+                <div class="artist-summary-description">
+                    <p>Wilfredo Lam was a Cuban artist who spent most of his career in Europe. He was born in Sagua La Grande, Cuba in 1902 to a Chinese father and a mother of African and Spanish heritage. Lam's works often reflect his Afro-Cuban heritage and the influence of the European avant-garde, and he is best known for his paintings that merge surrealism and cubism.</p>
+                    <p>Throughout his career, Lam's work was exhibited extensively in Europe and the United States, and he became an important figure in the modernist art movement. Today, his work can be found in major museums and galleries around the world, and he is considered one of the most significant artists of the 20th century.</p>
+                    <p>Lam passed away in Paris in 1982, leaving behind a legacy that continues to influence contemporary artists today.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Fatima Amjad</p>
+    </footer>
+</body>
+
+</html>
