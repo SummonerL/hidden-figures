@@ -6,14 +6,15 @@ body {
 
 .site-header {
     background-color: #d2b48c;
-    padding: 16px 0 32px 0;
+    padding: 16px 0 16px 0;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .header-content {
-    max-width: 960px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     align-items: center;
 }
 
@@ -29,7 +30,7 @@ body {
 }
 
 .main-nav li {
-    margin-left: 16px;
+    margin-left: 30px;
 }
 
 .cool-link {
@@ -58,7 +59,38 @@ main {
     background-repeat: no-repeat;
     background-position: center top -100px;
     background-size: 130%;
+    border-radius: 10px 10px 0 0;
     height: 400px;
+    position: relative;
+    overflow: hidden;  
+}
+
+.hero.gallery {
+    background: url('./images/the_jungle.jpg') center/cover no-repeat;
+    background-position: center top -100px;
+    background-size: 130%;
+    border-radius: 10px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero.lal {
+    background: url('./images/life_and_legacy.jfif') center/cover no-repeat;
+    background-position: center -395px;
+    background-size: 130%;
+    border-radius: 10px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;  
+}
+
+.hero.associated {
+    background: url('./images/picasso_kahlo.jpg') center/cover no-repeat;
+    background-position: center top -566px;
+    background-size: 130%;
+    border-radius: 10px;
+    height: 200px;
     position: relative;
     overflow: hidden;  
 }
@@ -72,6 +104,19 @@ main {
     right: 0;
     bottom: 0;
 }
+
+.hero.gallery h1 {
+    top: 35%;
+}
+
+.hero.lal h1 {
+    top: 35%;
+}
+
+.hero.associated h1 {
+    top: 35%;
+}
+
 
 .hero h1 {
     color: #fff;
@@ -101,7 +146,8 @@ main {
     background-color: #4B5320;
     background: linear-gradient(135deg, #4B5320 0%, #353B17 100%);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    padding: 50px;
+    border-radius: 0 0 10px 10px;
+    padding: 30px;
     text-align: center;
     color: #fff;
 }
@@ -109,6 +155,10 @@ main {
 #hero h2 {
     font-size: 36px;
     margin-bottom: 20px;
+}
+
+#hero .hero-link {
+    padding: 1rem;
 }
 
 .button {
@@ -136,8 +186,26 @@ main {
     padding: 32px 0;
 }
 
+.artwork-gallery {
+    margin: 0 auto;
+    padding: 32px 0;
+}
+
+.artwork-gallery .artwork-list {
+    justify-content: center;
+}
+
+.artwork-gallery .artwork-item {
+    width: 255px;
+}
+
 .artist-summary {
     flex-basis: 40%;
+    padding: 32px 0;
+}
+
+.artist-summary.lal {
+    flex-basis: 50%;
     padding: 32px 0;
 }
 
@@ -165,6 +233,11 @@ main {
     margin-top: 30px;
 }
 
+.artist-summary-link {
+    text-align: center;
+    padding: 1rem;
+}
+
 .artwork-list {
     display: flex;
     flex-wrap: wrap;
@@ -178,6 +251,7 @@ main {
     position: relative;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 .artwork-item img {
