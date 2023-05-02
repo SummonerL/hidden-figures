@@ -179,6 +179,11 @@ main {
     display: flex;
 }
 
+.container.article {
+    justify-content: center;
+    line-height: 2;
+}
+
 .featured-art {
     flex-basis: 60%;
     max-width: 960px;
@@ -205,7 +210,7 @@ main {
 }
 
 .artist-summary.lal {
-    flex-basis: 50%;
+    flex-basis: 100%;
     padding: 32px 0;
 }
 
@@ -261,6 +266,23 @@ main {
     transition: transform 0.3s ease;
 }
 
+.associated-image {
+    margin: 16px;
+    width: 280px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.associated-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
 .artwork-item:hover img {
     transform: scale(1.1);
 }
@@ -277,4 +299,90 @@ main {
     font-size: 16px;
     margin: 0;
     text-align: center;
+}
+
+/* Gallery Page */
+#nanogallery3 {
+    padding-top: 80px;
+}
+
+.artwork-synopsis {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    padding: 1rem;
+}
+
+/* Life and Legacy */
+.artist-summary-description {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lal .artist-summary-description {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #DCC5A7;
+    padding: 1rem 7rem;
+}
+
+.gallery-article {
+    margin-top: 4rem;
+    background-color: #DCC5A7;
+    padding: 1rem 7rem;
+}
+
+.center {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.center.full-image img {
+    width: 100%;
+}
+
+.half-flex {
+    flex-basis: 50%;
+}
+
+.half-flex img {
+    max-width: 100%;
+}
+
+.little-flex {
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.big-flex {
+    flex-basis: 60%;
+}
+
+.big-flex image {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .half-flex {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .little-flex {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .big-flex {
+        flex-basis: 100%;
+        justify-content: center;
+    }
+}
+
+.big-gap {
+    margin-top: 4rem;
 }

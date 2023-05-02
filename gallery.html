@@ -6,7 +6,6 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <script>
         window.addEventListener('scroll', function () {
             var parallax = document.getElementsByClassName('hero')[0];
@@ -16,6 +15,15 @@
             parallax.style.backgroundPosition = 'center ' + rate + 'px';
         });
     </script>
+
+    <!-- jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" type="text/javascript"></script>
+
+    <!-- nanogallery2 -->
+    <link href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet"
+        type="text/css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
 </head>
 
 <body>
@@ -42,79 +50,195 @@
             </div>
         </header>
 
-        <div class="container">
-            <section class="artwork-gallery">
-                <ul class="artwork-list">
-                    <li class="artwork-item">
-                        <img src="./images/mother_and_child.jpg"
-                            alt="Mother and Child">
-                        <h3 class="artwork-item-title">Mother and Child</h3>
-                    </li>
-                    <li class="artwork-item">
-                        <img src="./images/untitled.png"
-                            alt="Untitled">
-                        <h3 class="artwork-item-title">Untitled</h3>
-                    </li>
-                    <li class="artwork-item">
-                        <img src="./images/pole-woods.jpg"
-                            alt="Artwork">
-                        <h3 class="artwork-item-title">Artwork</h3>
-                    </li>
-                    <li class="artwork-item">
-                        <img src="./images/the_jungle.jpg"
-                            alt="The Jungle">
-                        <h3 class="artwork-item-title">The Jungle</h3>
-                    </li>
+        <div class="gallery-article">
 
-                    <li class="artwork-item">
-                        <img src="./images/mother_and_child.jpg"
-                            alt="Mother and Child">
-                        <h3 class="artwork-item-title">Mother and Child</h3>
-                    </li>
-                    <li class="artwork-item">
-                        <img src="./images/untitled.png"
-                            alt="Untitled">
-                        <h3 class="artwork-item-title">Untitled</h3>
-                    </li>
-                    <li class="artwork-item">
-                        <img src="./images/pole-woods.jpg"
-                            alt="Artwork">
-                        <h3 class="artwork-item-title">Artwork</h3>
-                    </li>
-                    <li class="artwork-item">
-                        <img src="./images/the_jungle.jpg"
-                            alt="The Jungle">
-                        <h3 class="artwork-item-title">The Jungle</h3>
-                    </li>
+            <div id="nanogallery3" data-nanogallery2='{
+                "thumbnailHeight":  "200",
+                "thumbnailWidth":   "200",
+                "galleryMosaic" :   [
+                    { "c": 1, "r": 1, "w": 3, "h": 3 }
+                ],
+                "viewerTools":      {
+                    "topLeft":   "label"
+                },  
+                    "thumbnailGutterWidth": 10,
+                    "thumbnailL1GutterWidth": 10,
+                    "thumbnailGutterHeight": 10,
+                    "thumbnailL1GutterHeight": 10,
+                    "itemsBaseURL":     "./images/"
+                }'>
 
-                    <li class="artwork-item">
-                        <img src="./images/mother_and_child.jpg"
-                            alt="Mother and Child">
-                        <h3 class="artwork-item-title">Mother and Child</h3>
-                    </li>
-                    <li class="artwork-item">
-                        <img src="./images/untitled.png"
-                            alt="Untitled">
-                        <h3 class="artwork-item-title">Untitled</h3>
-                    </li>
-                    <li class="artwork-item">
-                        <img src="./images/pole-woods.jpg"
-                            alt="Artwork">
-                        <h3 class="artwork-item-title">Artwork</h3>
-                    </li>
-                    <li class="artwork-item">
-                        <img src="./images/the_jungle.jpg"
-                            alt="The Jungle">
-                        <h3 class="artwork-item-title">The Jungle</h3>
-                    </li>
-                </ul>
-            </section>
+                <!-- gallery content -->
+                <a href="eternal_present.jpg" data-ngThumb="eternal_present.jpg">The Eternal Presence</a>
+            </div>
+
+            <div class="container">
+                <section class="artwork-synopsis">
+                    <h2 class="artwork-synopsis-title"><em>The Eternal Presence</em></h2>
+                    <div class="artwork-synopsis-description">
+                        <p>"The Eternal Presence (Homage to Alejandro García Caturla)" is a painting by Wifredo Lam,
+                            created in 1944. The work is an homage to the Cuban composer Alejandro García Caturla, who
+                            was a friend of Lam's and a fellow member of the Grupo Orígenes, a literary and artistic
+                            movement that sought to promote Cuban culture and identity.</p>
+                        <p>The painting includes three human-animal hybrid creatures in a dense composition. The number
+                            three not only represents the holy trinity in Christianity, but also, in Chinese philosophy,
+                            symbolizes birth and new beginnings emerging from chaos. Lam explained that the
+                            equine-female figure on the left (reminiscent of the horse-headed woman he painted in other
+                            works) represents the paradise that foreigners seek in Cuba, a land of pleasures and
+                            sickly-sweet music, and many scholars have interpreted her to be Oshun, the Orisha or deity
+                            of love in Santería, while the other two figures appear to represent the warrior deities
+                            Elegua and Ogun.</p>
+                        <p>An additional layer of meaning comes from the significance of the horse in Chinese culture
+                            (which Lam had begun to revisit and study upon his return to Cuba), in which the animal is
+                            valued for its military usefulness. As well, horses in Chinese visual representation
+                            frequently carry spiritual meaning, believed to guide individuals on heavenly journeys. The
+                            work's layered meanings and myriad cultural references are reflected in the composition. The
+                            limbs and bodies of the hidden figures twist and overlap with one another to a dizzying,
+                            confusing effect, which is further enhanced by the monochromatic color palette that flattens
+                            background and foreground. Emerging from this complex pictorial field, the figures' faces
+                            meet the viewer's gaze directly, even confrontationally.</p>
+                        <p>Lam intended the painting to serve as a commentary on the corruption of Cuba by imperialist
+                            powers, and dedicated the work to one of his major artistic influences, Cuban composer and
+                            judge Alejandro García Caturla, who was murdered on the morning of November 12, 1940, by the
+                            defendant in a trial he was meant to oversee later that day. Only 34 years old at the time
+                            of his death, Caturla was already a leader in Afro-Cubanism (an interdisciplinary movement
+                            aimed at increasing the recognition of African culture in Cuban society), blending both
+                            European and African musical elements in his compositions.</p>
+                    </div>
+                </section>
+            </div>
+
+
+            <div id="nanogallery2" data-nanogallery2='{
+                "thumbnailHeight":  "200",
+                "thumbnailWidth":   "200",
+                "galleryMosaic" :   [
+                    { "c": 1, "r": 1, "w": 2, "h": 3 }
+                ],
+                "viewerTools":      {
+                    "topLeft":   "label"
+                },  
+                    "thumbnailGutterWidth": 10,
+                    "thumbnailL1GutterWidth": 10,
+                    "thumbnailGutterHeight": 10,
+                    "thumbnailL1GutterHeight": 10,
+                    "itemsBaseURL":     "./images/"
+                }'>
+
+                <!-- gallery content -->
+                <a href="satan.png" data-ngThumb="satan.png">Satan</a>
+            </div>
+
+            <div class="container">
+                <section class="artwork-synopsis">
+                    <h2 class="artwork-synopsis-title"><em>Satan</em></h2>
+                    <div class="artwork-synopsis-description">
+                        <p>The painting, Satan, by Wifredo Lam features a central female figure in the foreground. This
+                            figure is a combination of hybridized figures with distorted and elongated bodies. The
+                            figures are arranged in a chaotic manner, with limbs and body parts interlocking and
+                            overlapping.</p>
+                        <p>One of the most striking aspects of the painting is the use of transmogrification, a device
+                            frequently used by Lam in his work. In Satan, the figure's testicle "chin" is a clear
+                            example of this technique. Lam was inspired by indigenous American and African ritual
+                            objects, which often feature transmogrification of body parts to suggest magical
+                            metamorphosis.</p>
+                        <p>The central figure in Satan is also partly inspired by the femme-cheval or horse-headed woman
+                            of the Santeria cult. This is reflected in the figure's elongated face and the suggestion of
+                            a horse's head in her features.</p>
+                        <p>The use of animal symbolism is another prominent feature of the painting. Lam's use of horse
+                            imagery can be linked to his Afro-Cuban roots and his interest in the mythology and rituals
+                            of Santería, a syncretic religion that developed in Cuba among enslaved Africans and their
+                            descendants.</p>
+                        <p>In Santeria, the horse is a powerful symbol that represents the Orisha (deities) Oya and
+                            Ogun, among others. The Orishas are believed to be intermediaries between humans and the
+                            supreme deity, and their possession is an important part of Santeria rituals. When a
+                            practitioner is possessed by an Orisha, they are said to be "ridden" by the spirit, and the
+                            experience is often described as being like a horse being ridden by a rider.</p>
+                        <p>Lam, who was deeply influenced by African and Afro-Caribbean culture and mythology, often
+                            incorporated horse imagery into his work as a way to explore themes of power,
+                            transformation, and spirituality. In many of his paintings, horses are depicted with
+                            elongated bodies, distorted features, and multiple heads, suggesting a merging of different
+                            entities or a transformation into a powerful being. In works like Satan, Lam merges horses
+                            with other forms or figures, creating hybrid creatures that blur the boundaries between
+                            human and animal, and between the natural and the supernatural.</p>
+                    </div>
+                </section>
+            </div>
+
+            <div id="nanogallery4" data-nanogallery2='{
+            "thumbnailHeight":  "200",
+            "thumbnailWidth":   "200",
+            "galleryMosaic" :   [
+                { "c": 1, "r": 1, "w": 3, "h": 2 }
+            ],
+            "viewerTools":      {
+                "topLeft":   "label"
+            },  
+                "thumbnailGutterWidth": 10,
+                "thumbnailL1GutterWidth": 10,
+                "thumbnailGutterHeight": 10,
+                "thumbnailL1GutterHeight": 10,
+                "itemsBaseURL":     "./images/"
+            }'>
+
+                <!-- gallery content -->
+                <a href="the_jungle.jpg" data-ngThumb="the_jungle.jpg">The Jungle</a>
+            </div>
+
+            <div class="container">
+                <section class="artwork-synopsis">
+                    <h2 class="artwork-synopsis-title"><em>The Jungle</em></h2>
+                    <div class="artwork-synopsis-description">
+                        <p>Wifredo Lam's painting "The Jungle" was created in 1943. It is an oil on canvas work that
+                            showcases Lam's signature style that blends Cubism, Surrealism, and Afro-Cuban imagery.</p>
+                        <p>The painting depicts a lush tropical jungle that is teeming with various elements, both
+                            animate and inanimate. Several masked figures protrude out of the thick sugarcane field.
+                            These figures appear to be part of the jungle itself, with vines and leaves growing out of
+                            their bodies.
+                            During the 1940s in Cuba, sugarcane was a major industry and a crucial part of the country's
+                            economy. The production of sugarcane required a significant amount of labor, which was often
+                            provided by Afro-Cuban and Haitian migrant workers. These workers were subjected to poor
+                            working conditions, low wages, and discrimination, similar to the experience of Black
+                            Americans in the cotton industry in the American South before the Civil War. This
+                            exploitation of labor is a theme that is explored in this painting via the sugarcane
+                            imagery.</p>
+                        <p>The painting's title, "The Jungle," hints at the idea of a wild and untamed place, full of
+                            life and danger. This theme is further emphasized by the various animals that are scattered
+                            throughout the painting. There are snakes, lizards, birds, and insects, all of which add to
+                            the sense of movement and activity in the jungle.</p>
+                        <p>One element of the painting that stands out is the use of hidden figures. Upon closer
+                            inspection, one can see that there are faces and other figures hidden within the leaves and
+                            vines. This technique creates a sense of mystery and intrigue, as if the jungle is hiding
+                            secrets that can only be uncovered by those who take the time to look closely.</p>
+                        <p>Lam employs a wide range of hues, from deep greens and browns to bright yellows and oranges.
+                            The colors are used to create a sense of depth and dimensionality, with the darker tones
+                            receding into the background and the brighter tones popping out in the foreground.</p>
+                        <p>In the essay "Strivings of the Negro People," W.E.B. Du Bois talks about the idea of double
+                            consciousness, which refers to the way in which Black Americans must navigate two different
+                            worlds – the world of Blackness and the world of whiteness. This concept is relevant to "The
+                            Jungle" because Lam's use of hidden figures and Afro-Cuban imagery can be seen as a way of
+                            highlighting the otherness of Blackness.</p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="center big-gap">
+                <a href="#top" class="cool-link">Scroll to Top</a>
+            </div>
+
         </div>
     </main>
 
     <footer>
         <p>&copy; 2023 Fatima Amjad</p>
     </footer>
+
+    <script>
+        $("a[href='#top']").click(function () {
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+            return false;
+        });
+    </script>
 </body>
 
 </html>
