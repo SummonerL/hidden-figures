@@ -85,6 +85,16 @@ main {
     overflow: hidden;  
 }
 
+.hero.further {
+    background: url('./images/lam_final.jpg') center/cover no-repeat;
+    background-position: center -250px;
+    background-size: 130%;
+    border-radius: 10px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;  
+}
+
 .hero.associated {
     background: url('./images/picasso_kahlo.jpg') center/cover no-repeat;
     background-position: center top -566px;
@@ -117,6 +127,9 @@ main {
     top: 35%;
 }
 
+.hero.further h1 {
+    top: 35%;
+}
 
 .hero h1 {
     color: #fff;
@@ -239,7 +252,7 @@ main {
 }
 
 .artist-summary-link {
-    text-align: center;
+    text-align: right;
     padding: 1rem;
 }
 
@@ -251,8 +264,8 @@ main {
 
 .artwork-item {
     margin: 16px;
-    width: 280px;
-    height: 350px;
+    width: 310px;
+    height: 480px;
     position: relative;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -301,11 +314,6 @@ main {
     text-align: center;
 }
 
-/* Gallery Page */
-#nanogallery3 {
-    padding-top: 80px;
-}
-
 .artwork-synopsis {
     display: flex;
     flex-direction: column;
@@ -317,18 +325,29 @@ main {
 .artist-summary-description {
     display: flex;
     flex-wrap: wrap;
+    border-radius: 10px;
 }
 
 .lal .artist-summary-description {
     display: flex;
     flex-wrap: wrap;
     background-color: #DCC5A7;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     padding: 1rem 7rem;
+}
+
+.lal .further {
+    background-color: #DCC5A7;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 1rem 7rem;
+    border-radius: 10px;
 }
 
 .gallery-article {
     margin-top: 4rem;
     background-color: #DCC5A7;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
     padding: 1rem 7rem;
 }
 
@@ -354,6 +373,11 @@ main {
     flex-basis: 40%;
     display: flex;
     justify-content: center;
+}
+
+.lal img {
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);;
 }
 
 .big-flex {
@@ -385,4 +409,19 @@ main {
 
 .big-gap {
     margin-top: 4rem;
+}
+
+.citations {
+    font-size: 75%;
+    width: 100%;
+    height: 135px;
+    overflow-y: scroll;
+}
+
+.micro-text {
+    font-size: 65%;
+}
+
+.full {
+    width: 100%;
 }
